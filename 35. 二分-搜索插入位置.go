@@ -6,6 +6,7 @@ func main() {
 	nums := []int{1, 3, 5, 6}
 	n := searchInsert(nums, 5)
 	fmt.Println(n)
+
 }
 
 func searchInsert(nums []int, target int) int {
