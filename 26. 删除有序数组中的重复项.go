@@ -9,6 +9,10 @@ func main() {
 }
 
 func removeDuplicates(nums []int) int {
+	n := len(nums)
+	if n == 0 {
+		return 0
+	}
 	down := 1
 	for top := 1; top < len(nums); top++ {
 		if nums[top] != nums[top-1] {
