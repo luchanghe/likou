@@ -5,11 +5,11 @@ import "fmt"
 func main() {
 	nums := []int{2, 7, 11, 15}
 	target := 9
-	n := twoSum(nums, target)
+	n := twoSum2(nums, target)
 	fmt.Printf("%v", n)
 }
 
-func twoSum(numbers []int, target int) []int {
+func twoSum2(numbers []int, target int) []int {
 	left, right := 0, len(numbers)-1
 	for left < right {
 		sum := numbers[left] + numbers[right]
